@@ -7,45 +7,92 @@ html, body{
   color: #333;
   background-color: #f4f4f4;
 }
+
 .html, body::-webkit-scrollbar {
   display: none;
 }
+
 .logo{
- width: 152.75px;
-  height: 38.56px;
-  justify-content: left;
-  margin-top: 25px;
-  margin-left: 177px;
+  width: 10vw;
+  height: 5vh;
+  padding-bottom: 1.5em;
+  padding-left: 2em;
+  padding-left: 1em;
 }
 
 .Header{
-position: absolute;
-  left: 0px;
-  top: 0px;
-  right: 0px;
+  position: relative;
   background: rgb(237,70,144);
-  background-image: linear-gradient(135deg, rgba(237,70,144,0.9) 0%, rgba(85,34,204,0.9) 100%), url('../img/wallpaper.png');
+  background-image: linear-gradient(153deg, rgba(237,70,144,0.9) 0%, rgba(85,34,204,0.9) 100%), url('../img/wallpaper.png');
   background-size:cover;
   background-position:center;
   height:742px;
   width: 100%;
   display:flex;
   background-attachment: fixed;
+  flex-direction:row;
 }
+
+.Header2{
+  position: relative;
+  background: rgb(70,170,237);
+  background: linear-gradient(153deg, rgba(70,170,237,0.9) 19%, rgba(74,137,229,0.9) 50%, rgba(85,34,204,0.9) 90%), url('../img/wallpaper.png');
+  background-size:cover;
+  background-position:center;
+  height:742px;
+  width: 100%;
+  display:flex;
+  background-attachment: fixed;
+  flex-direction:row;
+}
+
+.Header3{
+  position: relative;
+  background: rgb(85,34,204);
+  background: linear-gradient(153deg, rgba(85,34,204,0.9) 5%, rgba(61,111,184,0.9) 68%, rgba(40,133,194,0.9) 100%), url('../img/wallpaper.png');
+  background-size:cover;
+  background-position:center;
+  height:742px;
+  width: 100%;
+  display:flex;
+  background-attachment: fixed;
+  flex-direction:row;
+}
+
 .Navbar{
   display: flex;
   justify-content: space-between;
-  text-decoration: none !important;
+  align-items: center;
   background-color: transparent;
-  position: absolute/*fixed*/;
+  position: absolute;
   width: 100%;
 }
-.Navbar ul{
+
+.Navbar a{
   display: flex;
-  list-style: none;
   margin: 0;
   padding: 0;
 }
+
+.Navbar ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  padding: 0 50px;
+}
+
+.Navbar a{
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 25px 10px 25px;
+}
+
+.login{
+  border: 2px white solid;
+  border-radius: 35px;
+}
+
 .BTS{
   display: flex;
   text-align: left;
@@ -54,38 +101,297 @@ position: absolute;
   width:876px;
   height: 548px;
 }
+
 .Titre h1{
   font-size: 30px;
   font-weight: 700;
   color: #fff;
   margin-top: 250px;
-  margin-left: 28px;
+  margin-left: -70px;
 }
-.Titre p{font-size: 20px;
+
+.Titre p{
+  font-size: 20px;
   font-weight: 400;
   color: #fff;
   margin-top: 20px;
-  margin-left: 28px;
+  margin-left: -70px;
 }
-/*.Ticket{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+.Titre button{
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
   margin-top: 20px;
-  margin-left: 28px;
-  width: 200px;
-  height: 50px;
-  background-color: #fff;
-  color: #333;
-  border-radius: 5px;
-  text-decoration: none;
-}*/
-.Boutons{
-  align-items: flex-end;
+  padding:10px 20px;
+  border-radius: 35px;
+}
+
+.Rose{
+  background-color: #F5167E;
+  border: none;
+  margin-right: 20px;
+  margin-left: -60px;
+}
+
+.Blanc{
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+.Events{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  background-color: #242565;
+  padding:30px 0px 30px 0px;
+}
+
+.footer {
+  background-color: #0A075F;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.footer img.logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.Apropos {
+  flex: 1;
+  padding-right: 50px;
+}
+
+.Apropos p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.Réseaux {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.Réseaux div {
+  width: 30px;
+}
+
+.Réseaux img {
+  width: 100%;
+}
+
+.Infos1, .Infos2, .Infos3 {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.Infos1 a, .Infos2 a, .Infos3 a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.Infos1 a.premier, .Infos2 a.premier, .Infos3 a.premier {
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.Infos3 .Subsribe {
+  display: flex;
+  align-items: center;
+}
+
+.Subsribe input {
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  width: 250px;
+  margin-right: 10px;
+}
+
+.Subsribe button {
+  background-color: #ff497c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.Subsribe button:hover {
+  background-color: #e0416b;
+}
+
+.footer p {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 20px;
+  opacity: 0.6;
+}
+
+.Events {
+  background-color: #242565; 
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: -45px auto 40px;
+  max-width: 1000px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 2;
+}
+
+.Events div {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+  max-width: 180px;
+}
+
+.Events label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.Events select {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #7778B0;
+  color: white;
+  font-size: 16px;
+  width: 100%;
+  padding: 5px 0;
+  margin-top: 5px;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.Events select option {
+  background-color: white;
+  color: black;
+}
+
+#time-select {
+  position: relative;
+}
+
+#time-select:after {
+  content: "▼";
   position: absolute;
-  right: 220px;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+}
+
+select:focus {
+  border-bottom-color: #ff497c;
+}
+
+.Header {
+  position: relative;
+  z-index: 1;
+}
 
 
+
+
+
+
+/* Section des événements à venir */
+.main {
+  text-align: left;
+  margin: 60px auto;
+  max-width: 1200px;
+}
+
+.main h1 {
+  font-size: 36px;
+  color: #242565;
+  margin-bottom: 40px;
+}
+
+
+/* Grille d'événements */
+.Perso {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.Perso div {
+  border-radius: 20px;
+  text-align: left;
+  padding: 20px;
+  position: relative;
+}
+
+.Perso p{
+  background-color: white;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.Perso img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.Mois {
+  font-size: 18px;
+  font-weight: bold;
+  color: #242565;
+  margin: 10px 0;
+}
+
+.Année {
+  font-size: 32px;
+  font-weight: bold;
+  color: #ff497c;
+}
+
+.Title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.Script {
+  font-size: 14px;
+  color: #777;
+}
+
+.charge {
+  color: #ff497c;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 60px;
+  cursor: pointer;
+}
+
+
+
+.Brands{
+  display:flex;
+}
+.Blog{
+  display: flex;
 }
