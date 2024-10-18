@@ -59,7 +59,7 @@ Plusieurs pages ont été faites: Speakers, About us, Login.
 ​
 
 Hébergement sur GitHub Pages ou Vercel : Une fois le développement terminé, hébergez le projet "Vous avez la possibilité d'utiliser d'autres services d'hébergement gratuits pour héberger votre blog"
-​
+​Malheureusement l'hébergement du site refuse toujours de fonctionner.
 
 📑 Documentation
 
@@ -72,7 +72,7 @@ Fichier README : Bien que ce soit un projet de base, un fichier README peut êtr
 
 📱 Responsivité (Bonus)
 
-​
+​La partie responsive n'a malheureusement pas pu être faite par manque de temps.
 
 Media Queries : Bien que le projet soit limité à HTML et CSS, incluez des media queries pour assurer une bonne adaptation à différentes tailles d’écran (smartphones, tablettes, etc.).
 ​
