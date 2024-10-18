@@ -1,41 +1,80 @@
-# Brief Template
+Fonctionnalités requises :
 
-- *🔄 **Transformer le template One-Page** en un modèle **Multi-Page**.*
-- *Exemple : la rubrique "Blog" sur la barre de navigation doit rediriger l'utilisateur vers une nouvelle page. En d'autres termes, l'utilisateur ne doit pas rester sur la même page.*
-- *📄 Les pages concernées : **Services, Portfolio, Blog, Contact.***
-    
-    Sur cette première partie, la consigne a été respectée. Les parties Services, Portfolio, Blog et Contact ont été transférés vers de nouvelles pages. Le code adéquat de chacune des quatre parties dans le fichier open source “index.html” a été déplacé vers  d’autres fichiers crées (services.html, portfolio.html, blog.html, contact.html) et un lien href  a été utilisé pour rendre les liens des différentes sections cliquables et que ceux ci redirigent vers une autre page.
-    
-- *📱 **L'application doit être responsive** et adaptée aux différentes plateformes (web, mobile, desktop).*
-    
-    L’application est responsive depuis le code source fourni. La partie responsive correspond à la ligne 
-    
+​
 
-“<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">”
+🗂️ Planification et Organisation
 
-- *📝 **Ajouter au moins deux autres champs d'entrée** (inputs) au formulaire de contact.*
-    
-    Trois inputs ont été ajoutés (Nom, Prénom et Numéro de téléphone). Pour ce faire, on a pris le code d’un des trois autres inputs déjà présents dans le code source pour le recoller plus haut pour faire les inputs ajoutés, et pour celui du téléphone, une modification à été ajoutée. Il était de type “tel”,  et un **maxlength** à été ajouté entre autres pour que l’entre du numéro de tel ne dépasse pas les dix chiffres.
-    
-- *🏠 **Apporter des modifications à la page d'accueil**, tout en respectant le thème proposé initialement par AppLight.*
-- *💡 **Proposer des améliorations de votre choix** (faites preuve de créativité).*
-    
-    Les modifications et/ou améliorations faites sur ce projet sont le changement de l’image de fond “header “ pour toutes les pages, le titre de la page qui change en fonction de la partie choisie, soit service, etc. Les logos également des réseauc sociaux situés en dessous des membres de la team ont été rendus cliquables, et ils redirigent vers leurs réseaux respectifs.
-    
-- *✨** Respecter les bonnes pratiques** en termes de contenu HTML et CSS (minimiser le code autant que possible).*
-- *🎨 **Proposer un logo **qui respecte le thème du site.*
-    
-    Le logo a été fait grâce à l’IA et on a simplement remplacé le fichier logo existant dans le dossier par le nôtre en lui donnant le même nom pour que le programme reste inchangé.
-    
+​
 
-**Bonus :**
+Création d’un tableau Trello : Organisez votre travail en différentes tâches, comme la création de maquettes, le développement de chaque page et les tests.
+Le tableau de TRELLO a été fait en début de semaine pour bien suivre l'avancement des tâches pour la finalisation du projet.
+​
 
-- *🆕 **Ajouter au moins deux pages de votre choix** pour améliorer l'application (développées en utilisant HTML et CSS).*
-    
-    Deux pages ont été ajoutés (Inscription et Connexion). Elles ont été entièrement écrites de A à Z en HTML et CSS sans JS ni Bootstrap. On a utilisé un link pour lier la page HTML avec le CSS, des div, des input et des type dans le HTML. Ce qui nous a permis de modifier et styliser les différentes parties dans nos pages HTML  en les épinglant grâce à leur imput, type et autres.
-    
-- *🎆** Ajouter des effets visuels attrayants.***
-- *🖱️ **Changer l'arrière-plan de chaque rubrique dans la barre de navigation** lorsque le curseur passe dessus.*
-- *🖼️ **Ajouter des images d'arrière-plan **pour les différentes pages, tout en gardant le contenu lisible et clair.*
-    
-    Parties non faites.
+Estimation du temps : Prévoyez un temps approximatif pour chaque tâche afin de respecter les délais.
+​
+
+​
+
+🎨 Conception des Maquettes
+
+​
+
+Maquettes des pages : Créez des maquettes simples pour les pages Speakers, About et Login, en respectant le thème fourni.
+​
+
+Navigation claire : Assurez-vous que la navigation entre les pages est intuitive (liens clairs dans le menu).
+
+Le maquettage a été fait sur FIGMA, qui est un outil utilisé par les professionnels. Cela nous a permis de créer un beau design qu'on a essayé à la suite de reproduire ou tout du moins se rapprocher un maximum.
+​
+
+​
+
+💻 Développement
+
+​
+
+HTML Structuré : Utilisez des balises HTML sémantiques pour une meilleure lisibilité.
+Le HTML a essayé d'être fait de manière à respecter le plus la sémantique en utilisant le plus de balises pour décomposer le code en plusieurs parties. Et l'ajout de plusieurs "class" a été fait pour retrouver plus facilement les éléments à styliser sur CSS.
+​
+
+CSS avec Grilles : Utilisez CSS Grid pour organiser les sections de chaque page. Cela facilitera la mise en page et le positionnement des éléments.
+Le CSS a été plus compliqué à prendre en main, surtout avec la notion de CSS Grid. Les "class" utilisées dans le HTML on été utiles pour le balisage des éléments et la stylisation a été facilité grace au CSS Grid.
+​
+
+Respect des maquettes : Assurez-vous que le rendu final correspond fidèlement aux maquettes fournies.
+​
+
+​
+
+📄 Pages Séparées
+
+​
+
+Approche Multi-pages : Créez des fichiers HTML distincts pour chaque section (Speakers.html, About.html, Login.html) et liez-les via un menu de navigation.
+Plusieurs pages ont été faites: Speakers, About us, Login.
+​
+
+🌐 Hébergement
+
+​
+
+Hébergement sur GitHub Pages ou Vercel : Une fois le développement terminé, hébergez le projet "Vous avez la possibilité d'utiliser d'autres services d'hébergement gratuits pour héberger votre blog"
+​
+
+📑 Documentation
+
+​
+
+Fichier README : Bien que ce soit un projet de base, un fichier README peut être utile pour expliquer la structure du projet et les instructions d'utilisation.
+​
+
+​
+
+📱 Responsivité (Bonus)
+
+​
+
+Media Queries : Bien que le projet soit limité à HTML et CSS, incluez des media queries pour assurer une bonne adaptation à différentes tailles d’écran (smartphones, tablettes, etc.).
+​
+
+Flexibilité du Design : Prévoyez des unités de mesure flexibles (comme les pourcentages) pour que la mise en page s’ajuste bien sur différents appareils.
