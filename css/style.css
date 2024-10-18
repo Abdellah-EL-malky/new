@@ -33,6 +33,19 @@ html, body{
   flex-direction:row;
 }
 
+.Header4{
+  position: relative;
+  background: rgb(230,95,28);
+background: linear-gradient(153deg, rgba(230,95,28,0.9) 16%, rgba(40,133,194,0.9) 66%, rgba(29,241,22,0.9) 100%), url('../img/wallpaper.png');
+  background-size:cover;
+  background-position:center;
+  height:742px;
+  width: 100%;
+  display:flex;
+  background-attachment: fixed;
+  flex-direction:row;
+}
+
 .Header2{
   position: relative;
   background: rgb(70,170,237);
@@ -70,6 +83,7 @@ html, body{
 
 .Navbar a{
   display: flex;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -241,12 +255,12 @@ html, body{
 .Events {
   background-color: #242565; 
   color: white;
-  padding: 20px;
+  padding: 5px 20px;
   border-radius: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: -45px auto 40px;
+  margin: -100px auto 40px;
   max-width: 1000px;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
   position: relative;
@@ -264,7 +278,7 @@ html, body{
 .Events label {
   font-size: 16px;
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: 50px;
   display: block;
 }
 
@@ -310,12 +324,6 @@ select:focus {
   z-index: 1;
 }
 
-
-
-
-
-
-/* Section des événements à venir */
 .main {
   text-align: left;
   margin: 60px auto;
@@ -329,7 +337,6 @@ select:focus {
 }
 
 
-/* Grille d'événements */
 .Perso {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -339,15 +346,12 @@ select:focus {
 }
 
 .Perso div {
+  background-color: white;
   border-radius: 20px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
   text-align: left;
   padding: 20px;
   position: relative;
-}
-
-.Perso p{
-  background-color: white;
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .Perso img {
@@ -378,20 +382,185 @@ select:focus {
   font-size: 14px;
   color: #777;
 }
-
 .charge {
-  color: #ff497c;
+  width:10%;
+  padding:10px 8px 10px 30px;
+  margin-left: 500px;
+  background-color: transparent;
+  border: 3px solid #3D37F1;
+  border-radius: 25px;
+  color: #3D37F1;
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 60px;
   cursor: pointer;
 }
 
-
-
 .Brands{
   display:flex;
+  justify-content: space-around;
 }
+
+.Brand1{
+  margin-top: 60px;
+}
+
+.Brand2{
+  margin-top: 60px;
+}
+
+.Brand3{
+  margin-top: 60px;
+}
+
+.Brand4{
+  margin-top: 30px;
+}
+
+.Brand5{
+  margin-top: 32px;
+}
+
 .Blog{
   display: flex;
+}
+
+.Blog2{
+  margin-left: 50px;
+}
+
+.Solo h1{
+  align-items: center;
+}
+
+.BTitle{
+  color:#242565;
+  font-weight: 700;
+}
+
+.Event {
+  display: flex;
+  justify-content: space-between;
+  max-width: 600px;
+  margin-left: 700px;
+  margin-top:-70px;
+  margin-bottom: 50px;
+}
+
+.Event label {
+  display: none;
+}
+
+.Event select {
+  background-color: #f4f5fe;
+  color: #2c2f8d;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Event select:hover {
+  background-color: #eceeff;
+}
+
+.Event select:focus {
+  outline: none;
+}
+
+.bandeau{
+  background-color: #EEE1FF;
+  padding:10px 10px 10px 10px;
+  width: 100vw;
+}
+
+.stylh1{
+  position: relative; 
+  left: 500px;
+}
+
+.stylh2{
+  position: relative;
+  left: 300px;
+}
+
+.Histoire{
+  text-align:center;
+}
+
+form{
+  width: 100%;
+  max-width: 500px;
+  padding: 40px;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+h4{
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 5px;
+  margin-left: -60px;
+  margin-top: -25px;
+  color: #333;
+}
+
+hr{
+  margin: 10px 0px;
+   visibility: hidden;
+}
+
+.email-password{
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.email-password div{
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  margin-top: 5px;
+}
+
+input[type="email"] {
+  background-color: #ffffff;
+  color: #000;
+  outline: none;
+}
+
+input[type="password"] {
+  background-color: #ffffff;
+  color: #000;
+  outline: none;
+}
+
+input[type="button"]
+{
+   margin-top: 15px;
+   border-radius: 20px;
+   background-color: #F5167E;
+    color: #fff;
+   border: 1px solid #fff;
+   cursor: pointer;
+    padding: 8px 8px;
+   margin-left: 150px;
+}
+
+.main2 {
+  text-align: left;
+  margin: 60px auto;
+  max-width: 1200px;
+  background-image: url("../img/holo.png");
+}
+
+.main2 h1 {
+  font-size: 36px;
+  color: #242565;
+  margin-bottom: 40px;
 }

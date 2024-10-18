@@ -3,7 +3,6 @@
 
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Eventick-Home</title>
    <link rel="stylesheet" href="css/style.css">
   </head>
@@ -16,7 +15,7 @@
          <li class="Accueil"><a href="index.html">Home</a></li>
          <li class="Speak"><a href="our-speakers.html">Our Speakers</a></li>
          <li class="About"><a href="about-us.html">About Us</a></li>
-         <li class="login"><a href="#">Login</a></li>
+         <li class="login"><a href="login.html">Login</a></li>
         </ul>
       </nav>
       <div class="BTS">
@@ -58,48 +57,81 @@
         </select>
       </div>
       <h1>Upcoming Events</h1>
+      <div class="Event">
+        <label for="weekdays">Weekdays</label>
+        <select id="weekdays">
+          <option value="monday">Monday</option>
+          <option value="tuesday">Tuesday</option>
+          <option value="wednesday">Wednesday</option>
+          <option value="thursday">Thursday</option>
+          <option value="friday">Friday</option>
+        </select>
+      
+        <label for="event-type">Event Type</label>
+        <select id="event-type">
+          <option value="concert">Concert</option>
+          <option value="conference">Conference</option>
+          <option value="festival">Festival</option>
+          <option value="workshop">Workshop</option>
+        </select>
+      
+        <label for="category">Any Category</label>
+        <select id="category">
+          <option value="music">Music</option>
+          <option value="sports">Sports</option>
+          <option value="art">Art</option>
+          <option value="technology">Technology</option>
+        </select>
+      </div>
+      
       <div class="Perso">
         <div class="Date1">
           <img src="img/APR 14.png" alt="Image d'un groupe en scène">
-          <span class="Mois-Année">APR 14</span>
-          <h2>Wonder Girls 2010 Wonder<br> Girls World Tour San Francisco</h2>
+          <p class="Mois">APR</p>
+          <p class="Année">14</p>
+          <p class="Title">Wonder Girls 2010 Wonder<br> Girls World Tour San Francisco</p>
           <p class="Script">We’ll get you directly seated and<br> inside for you to enjoy the show.</p>
         </div>
         <div class="Date2">
           <img src="img/AUG 20.png" alt="Image d'un groupe qui danse sur scène">
-          <span class="Mois-Année">AUG 20</span>
-          <h2>JYJ 2011 JYJ Worldwide<br> Concert Barcelona</h2>
+          <p class="Mois">AUG</p>
+          <p class="Année">20</p>
+          <p class="Title">JYJ 2011 JYJ Worldwide<br> Concert Barcelona</p>
           <p class="Script">Directly seated and inside for you to<br> enjoy the show.</p>
         </div>
         <div class="Date3">
           <img src="img/SEP 18.png" alt="Image d'un groupe en scène">
-          <span class="Mois-Année">SEP 18</span>
-          <h2>2011 Super Junior SM Town Live '10<br> World Tour New York City</h2>
+          <p class="Mois">SEP</p>
+          <p class="Année">18</p>
+          <p class="Title">2011 Super Junior SM Town Live '10<br> World Tour New York City</p>
           <p class="Script">Directly seated and inside for you to<br> enjoy the show.</p>
         </div>
         <div class="Date4">
           <img src="img/APR 14 2.png" alt="Image d'un groupe qui danse sur scène">
-          <span class="Mois-Année">APR 14</span>
-          <h2>Wonder Girls 2010 Wonder<br> Girls World Tour San Francisco</h2>
+          <p class="Mois">APR</p>
+          <p class="Année">14</p>
+          <p class="Title">Wonder Girls 2010 Wonder<br> Girls World Tour San Francisco</p>
           <p class="Script">We’ll get you directly seated and<br> inside for you to enjoy the show.</p>
         </div>
         <div class="Date5">
           <img src="img/AUG 20 2.png" alt="Image d'un groupe en scène">
-          <span class="Mois-Année">AUG 20</span>
-          <h2>JYJ 2011 JYJ Worldwide<br> Concert Barcelona</h2>
+          <p class="Mois">AUG</p>
+          <p class="Année">20</p>
+          <p class="Title">JYJ 2011 JYJ Worldwide<br> Concert Barcelona</p>
           <p class="Script">Directly seated and inside for you to<br> enjoy the show.</p>
         </div>
         <div class="Date6">
           <img src="img/SEP 18 2.png" alt="Image de doigts faisant le signe de coeur">
-          <span class="Mois-Année">SEP 18</span>
-          <h2>2011 Super Junior SM Town Live '10<br> World Tour New York City</h2>
+          <p class="Mois">SEP</p>
+          <p class="Année">18</p>
+          <p class="Title">2011 Super Junior SM Town Live '10<br> World Tour New York City</p>
           <p class="Script">Directly seated and inside for you to<br> enjoy the show.</p>
         </div>
       </div>
       <p class="charge">Load More</p>
       <div class="bandeau">
-        <h1>Join these brands</h1>
-        <p>We'veve had the pleasure of working with industry-defining brands.These<br> are just some of them.</p></div>
+        <h1  class="stylh1">Join these brands</h1>
+        <p class="stylh2">We've had the pleasure of working with industry-defining brands.These are just some of them.</p></div>
       </div>
       <div class="Brands">
         <div class="Brand1">
@@ -118,24 +150,26 @@
           <img src="img/Microsoft.png" alt="Logo de Microsoft">
         </div>
       </div>
-      <h1>Blog</h1>
-      <h2>Read our latest blog posts</h2>
+      <div class="Solo">
+        <h1>Blog</h1>
+        <h2>Read our latest blog posts</h2>
+      </div>
       <div class="Blog">
         <div class="Blog1">
           <img src="img/BLOG 1.png" alt="Image d'une salle de conférence remplie">
           <p class="BTitle">6 Strategies to Find Your Conference Keynote and Other Speakers</p>
           <p class="BDate">12 Mar - Jhon Doe</p>
         </div>
-      </div>
-      <div class="Blog2">
-        <img src="img/BLOG 2.png" alt="Image de gens autour d'une table à manger">
-        <p class="BTitle">How Successfully Used Paid Marketing to Drive Incremental Ticket Sales</p>
-        <p class="BDate">12 Mar - Jhon Doe</p>
-      </div>
-      <div class="Blog3">
-        <img src="img/BLOG 3.png" alt="Image d'une présentation en conférence">
-        <p class="BTitle">Introducing Workspaces: Work smarter, not harder with new navigation</p>
-        <p class="BDate">12 Mar - Jhon Doe</p>
+        <div class="Blog2">
+          <img src="img/BLOG 2.png" alt="Image de gens autour d'une table à manger">
+          <p class="BTitle">How Successfully Used Paid Marketing to Drive Incremental Ticket Sales</p>
+          <p class="BDate">12 Mar - Jhon Doe</p>
+        </div>
+        <div class="Blog3">
+          <img src="img/BLOG 3.png" alt="Image d'une présentation en conférence">
+          <p class="BTitle">Introducing Workspaces: Work smarter, not harder with new navigation</p>
+          <p class="BDate">12 Mar - Jhon Doe</p>
+        </div>
       </div>
 
     </section>
